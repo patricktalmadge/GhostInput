@@ -1,0 +1,17 @@
+JQuery UI GhostInput Widget.
+
+GhostInput provides a Tumblr like control that creates text on top of the input control. The text moves when the user types but the user is unable to change the text. GhostText and GhostLabel values are pulled from html5 data- attributes.
+
+Sample:
+
+	html5 markup:
+		<input type="text" name="sample1" id="sample1" class="ui-ghostinput ui-state-default" data-ghosttext=".GhostInput.com" data-ghostlabel="URL">
+
+	JavaScript:
+		$('.ui-ghostinput').ghostinput();
+
+
+
+
+
+Code is based off https://github.com/michelgotta/jquery-ghostinput-plugin but extends JQuery UI and supports JQuery UI themes.

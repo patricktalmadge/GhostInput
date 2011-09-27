@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+
+	<title>GhostInput Demo</title>
+	
+	<meta charset="UTF-8">
+	
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/smoothness/jquery-ui.css" type="text/css" />
+	<link rel="stylesheet" href="css/ui.ghostinput.css">
+</head>
+<body style="background:#C1F0F6;">
+	<div>
+		<h2>JQuery UI GhostInput Widget</h2>
+
+		<p>GhostText and GhostLabel values are pulled from html5 data- attributes.</p>
+		
+		<h3>Sample:</h3>
+
+		<h4>html5 markup</h4>
+		<p>&lt;input type="text" name="sample1" id="sample1" class="ui-ghostinput ui-state-default" data-ghosttext=".GhostInput.com" data-ghostlabel="URL"&gt;</p>
+
+		<h4>JavaScript</h4>
+		<p>$('.ui-ghostinput').ghostinput();</p>
+	</div>
+	<div>
+		<h4>Label and Text</h4>
+		<input type="text" name="sample1" id="sample1" class="ui-ghostinput ui-state-default" data-ghosttext=".GhostInput.com" data-ghostlabel="URL">
+		
+		<h4>Label No Text</h4>
+		<input type="text" name="sample2" id="sample2" class="ui-ghostinput ui-state-default" data-ghosttext="" data-ghostlabel="Name">
+		
+		<h4>Text No Label</h4>
+		<input type="text" name="sample3" id="sample3" class="ui-ghostinput ui-state-default" data-ghosttext="Ghost" data-ghostlabel="">
+		
+		<h4>No Label Or Text</h4>
+		<input type="text" name="sample4" id="sample4" class="ui-ghostinput ui-state-default" data-ghosttext="" data-ghostlabel="">
+
+    </div>
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+	<script src="js/ui.ghostinput.js"></script>	
+	<script>
+		$(document).ready(function() {
+			$('.ui-ghostinput').ghostinput();
+		});
+	</script>
+</body>
+</html>
